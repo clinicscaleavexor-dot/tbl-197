@@ -344,6 +344,34 @@
 
     .img-grid-10 .img-placeholder { aspect-ratio: 1; }
 
+    .modelo-card {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 1;
+      box-shadow: 0 4px 18px rgba(44,27,30,.18);
+      cursor: default;
+    }
+    .modelo-card img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .4s ease;
+    }
+    .modelo-card:hover img { transform: scale(1.06); }
+    .modelo-card span {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(to top, rgba(44,27,30,.82) 0%, transparent 100%);
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: clamp(10px, 1.5vw, 13px);
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-align: center;
+      padding: 22px 8px 8px;
+    }
+
     /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
        4. HISTÓRIA
     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
@@ -1095,47 +1123,46 @@
 
       <h3 class="reveal" style="font-family:var(--font-display);font-size:clamp(20px,3vw,28px);color:var(--mauve2);margin-bottom:28px;">Modelos que você vai aprender a fazer:</h3>
 
-      <div class="img-grid-10 reveal">
-        <!-- 10 image placeholders -->
-        <div class="img-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Modelo 1</span>
+      <div class="img-grid-10">
+        <div class="modelo-card">
+          <img src="https://webnario.b-cdn.net/Aro%20desconstruido.jpeg" alt="Aro Desconstruído" />
+          <span>Aro Desconstruído</span>
         </div>
-        <div class="img-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Modelo 2</span>
+        <div class="modelo-card">
+          <img src="https://webnario.b-cdn.net/borboletas%20flores%20espirais.jpeg" alt="Borboletas Flores Espirais" />
+          <span>Borboletas Flores Espirais</span>
         </div>
-        <div class="img-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Modelo 3</span>
+        <div class="modelo-card">
+          <img src="https://webnario.b-cdn.net/camadas.jpeg" alt="Camadas" />
+          <span>Camadas</span>
         </div>
-        <div class="img-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Modelo 4</span>
+        <div class="modelo-card">
+          <img src="https://webnario.b-cdn.net/com%20faixa.jpeg" alt="Com Faixa" />
+          <span>Com Faixa</span>
         </div>
-        <div class="img-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Modelo 5</span>
+        <div class="modelo-card">
+          <img src="https://webnario.b-cdn.net/efeito%20shalk.jpeg" alt="Efeito Shalk" />
+          <span>Efeito Shalk</span>
         </div>
-        <div class="img-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Modelo 6</span>
+        <div class="modelo-card">
+          <img src="https://webnario.b-cdn.net/flutuante.jpg" alt="Flutuante" />
+          <span>Flutuante</span>
         </div>
-        <div class="img-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Modelo 7</span>
+        <div class="modelo-card">
+          <img src="https://webnario.b-cdn.net/letras%20em%20camadas.jpeg" alt="Letras em Camadas" />
+          <span>Letras em Camadas</span>
         </div>
-        <div class="img-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Modelo 8</span>
+        <div class="modelo-card">
+          <img src="https://webnario.b-cdn.net/plissado.jpeg" alt="Plissado" />
+          <span>Plissado</span>
         </div>
-        <div class="img-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Modelo 9</span>
+        <div class="modelo-card">
+          <img src="https://webnario.b-cdn.net/Todos%20os%20tipos%20de%20flores.jpeg" alt="Todos os Tipos de Flores" />
+          <span>Todos os Tipos de Flores</span>
         </div>
-        <div class="img-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Modelo 10</span>
+        <div class="modelo-card">
+          <img src="https://webnario.b-cdn.net/Topos%20Basicos.jpg" alt="Topos Básicos" />
+          <span>Topos Básicos</span>
         </div>
       </div>
 
@@ -1439,9 +1466,9 @@
         <!-- Totals -->
         <div class="pricing-total">
           <p class="pricing-total-was">De R$ 1.433,50</p>
-          <p class="pricing-total-main">por 12x de R$ 14,00</p>
+          <p class="pricing-total-main">por 12x de R$ 21,90</p>
           <p class="pricing-total-or">ou</p>
-          <p class="pricing-total-cash">R$ 147,00 à vista</p>
+          <p class="pricing-total-cash">R$ 197,00 à vista</p>
         </div>
 
         <a href="#" class="btn btn-hero"><span>Quero Me Inscrever ›</span></a>
