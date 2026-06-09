@@ -877,15 +877,14 @@
       text-align: center;
     }
     .about-photo {
-      width: 180px; height: 180px;
+      width: 200px; height: 200px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--blush2), var(--rose));
-      display: flex; align-items: center; justify-content: center;
       margin: 0 auto 32px;
       border: 4px solid var(--gold);
       box-shadow: 0 16px 40px rgba(139,79,90,0.2);
+      overflow: hidden;
     }
-    .about-photo svg { width: 70px; height: 70px; stroke: rgba(255,255,255,0.9); fill: none; stroke-width: 1.2; }
+    .about-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
     .about-name {
       font-family: var(--font-display);
@@ -1421,34 +1420,14 @@
 
         <!-- Items -->
         <ul class="pricing-items">
-          <li>
-            <span class="pricing-item-name"><span class="pricing-check">✔</span> Curso TBL completo</span>
-            <span class="pricing-price">(R$ 647,00)</span>
-          </li>
-          <li>
-            <span class="pricing-item-name"><span class="pricing-check">✔</span> Mockup Digital</span>
-            <span class="pricing-price">(R$ 49,90)</span>
-          </li>
-          <li>
-            <span class="pricing-item-name"><span class="pricing-check">✔</span> Precificação com Inteligência Artificial</span>
-            <span class="pricing-price">(R$ 347,00)</span>
-          </li>
-          <li>
-            <span class="pricing-item-name"><span class="pricing-check">✔</span> Canva para negócios com Renata Massa</span>
-            <span class="pricing-price">(R$ 99,90)</span>
-          </li>
-          <li>
-            <span class="pricing-item-name"><span class="pricing-check">✔</span> Marketing Digital com Tatiana Gouvêa</span>
-            <span class="pricing-price">(R$ 149,90)</span>
-          </li>
-          <li>
-            <span class="pricing-item-name"><span class="pricing-check">✔</span> Drive com arquivos exclusivos</span>
-            <span class="pricing-price">(R$ 29,90)</span>
-          </li>
-          <li>
-            <span class="pricing-item-name"><span class="pricing-check">✔</span> Suporte Particular no WhatsApp</span>
-            <span class="pricing-price">(R$ 109,90)</span>
-          </li>
+          <li><span class="pricing-item-name"><span class="pricing-check">✔</span> Curso TBL completo</span></li>
+          <li><span class="pricing-item-name"><span class="pricing-check">✔</span> Mockups Digitais</span></li>
+          <li><span class="pricing-item-name"><span class="pricing-check">✔</span> Precificação Simplificada com Inteligência Artificial</span></li>
+          <li><span class="pricing-item-name"><span class="pricing-check">✔</span> Canva para negócios com Renata Massa</span></li>
+          <li><span class="pricing-item-name"><span class="pricing-check">✔</span> Marketing Digital com Tatiana Gouvêa</span></li>
+          <li><span class="pricing-item-name"><span class="pricing-check">✔</span> 3 Aulas com Edu Saloti</span></li>
+          <li><span class="pricing-item-name"><span class="pricing-check">✔</span> Caixa Festa na Caixa 100% Tesoura</span></li>
+          <li><span class="pricing-item-name"><span class="pricing-check">✔</span> Drive com arquivos exclusivos e atualizados semanalmente</span></li>
         </ul>
 
         <div class="pricing-divider"></div>
@@ -1469,7 +1448,7 @@
       <div class="drive-callout reveal">
         <img src="/imagens-depoimentos/drive.png" alt="Drive com arquivos exclusivos" class="drive-img" />
         <div class="drive-text">
-          <span class="drive-tag">✦ Bônus Exclusivo</span>
+          <span class="drive-tag">Acesso Exclusivo</span>
           <h4>Drive atualizado com novidades o ano todo</h4>
           <p>O Drive com arquivos para as alunas é <strong>atualizado conforme datas comemorativas e tendências do mercado</strong> — você sempre terá conteúdo fresco e relevante para vender mais em cada época do ano.</p>
         </div>
@@ -1543,7 +1522,7 @@
       </div>
 
       <div class="about-photo reveal">
-        <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <img src="/imagens-depoimentos/dep-1.png" alt="Giselle Garcia" />
       </div>
 
       <h2 class="about-name reveal">Giselle Garcia</h2>
