@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curso TBL — Topo de Bolo | Giselle Silveira</title>
+  <title>Curso TBL — Topo de Bolo | Giselle Garcia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
@@ -1028,6 +1028,22 @@
       letter-spacing: 0.05em;
     }
     footer span { color: var(--gold); opacity: 0.7; }
+
+    .drive-callout {
+      display: flex; align-items: center; gap: 28px;
+      background: rgba(201,169,110,0.1); border: 1.5px solid rgba(201,169,110,0.35);
+      border-radius: 20px; padding: 28px 32px; margin: 36px auto 0;
+      max-width: 780px; text-align: left;
+    }
+    .drive-img { width: 140px; min-width: 140px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+    .drive-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 8px; }
+    .drive-text h4 { font-family: var(--font-display); font-size: clamp(16px,2vw,20px); color: var(--white); margin-bottom: 10px; }
+    .drive-text p { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.7; }
+    .drive-text strong { color: var(--gold); }
+    @media (max-width: 600px) {
+      .drive-callout { flex-direction: column; text-align: center; padding: 24px 20px; }
+      .drive-img { width: 100%; min-width: unset; }
+    }
   </style>
 </head>
 <body>
@@ -1414,7 +1430,7 @@
             <span class="pricing-price">(R$ 49,90)</span>
           </li>
           <li>
-            <span class="pricing-item-name"><span class="pricing-check">✔</span> Precificação simplificado com Deivison Silveira</span>
+            <span class="pricing-item-name"><span class="pricing-check">✔</span> Precificação com Inteligência Artificial</span>
             <span class="pricing-price">(R$ 347,00)</span>
           </li>
           <li>
@@ -1449,6 +1465,16 @@
 
       </div>
 
+      <!-- Drive callout -->
+      <div class="drive-callout reveal">
+        <img src="/imagens-depoimentos/drive.png" alt="Drive com arquivos exclusivos" class="drive-img" />
+        <div class="drive-text">
+          <span class="drive-tag">✦ Bônus Exclusivo</span>
+          <h4>Drive atualizado com novidades o ano todo</h4>
+          <p>O Drive com arquivos para as alunas é <strong>atualizado conforme datas comemorativas e tendências do mercado</strong> — você sempre terá conteúdo fresco e relevante para vender mais em cada época do ano.</p>
+        </div>
+      </div>
+
       <p class="reveal" style="color:rgba(255,255,255,0.4);font-size:12px;margin-top:18px;letter-spacing:0.06em;">Compra 100% segura · Acesso imediato · Garantia de 7 dias</p>
 
       <!-- Texto de garantia -->
@@ -1478,13 +1504,10 @@
 
       <h3 class="reveal" style="font-family:var(--font-display);font-size:clamp(18px,2.5vw,24px);color:var(--mauve2);margin-bottom:28px;">Depoimentos em vídeo:</h3>
 
-      <div class="videos-grid">
-        <video controls preload="metadata" style="width:100%;aspect-ratio:16/9;border-radius:16px;display:block;background:#000;">
-          <source src="https://webnario.b-cdn.net/WhatsApp%20Video%202024-08-20%20at%2009.59.42.mp4" type="video/mp4" />
-        </video>
-        <video controls preload="metadata" style="width:100%;aspect-ratio:16/9;border-radius:16px;display:block;background:#000;">
-          <source src="https://webnario.b-cdn.net/IMG_7856.mov" type="video/mp4" />
-        </video>
+      <div class="videos-grid" style="grid-template-columns:repeat(3,1fr);">
+        <img src="/imagens-depoimentos/dep-1.png" alt="Depoimento de aluna 1" style="width:100%;border-radius:16px;display:block;object-fit:cover;" />
+        <img src="/imagens-depoimentos/dep-2.png" alt="Depoimento de aluna 2" style="width:100%;border-radius:16px;display:block;object-fit:cover;" />
+        <img src="/imagens-depoimentos/dep-3.png" alt="Depoimento de aluna 3" style="width:100%;border-radius:16px;display:block;object-fit:cover;" />
       </div>
 
       <div class="cta-center reveal">
@@ -1523,11 +1546,11 @@
         <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
       </div>
 
-      <h2 class="about-name reveal">Giselle Silveira</h2>
+      <h2 class="about-name reveal">Giselle Garcia</h2>
       <p class="about-title reveal">Referência em Papelaria Personalizada · Influencer · Criadora do Método TBL</p>
 
       <p class="about-bio reveal">
-        Giselle Silveira é hoje a <strong>maior referência e influencer em papelaria personalizada</strong> e já conta com centenas de milhares de seguidores e alunas no mundo todo que transformaram o seu negócio em sucesso através de sua metodologia e hoje vivem apenas disso!<br><br>
+        Giselle Garcia é hoje a <strong>maior referência e influencer em papelaria personalizada</strong> e já conta com centenas de milhares de seguidores e alunas no mundo todo que transformaram o seu negócio em sucesso através de sua metodologia e hoje vivem apenas disso!<br><br>
         Ela criou esse treinamento passo a passo com certificado para que você possa <strong>sair da estaca zero e se tornar uma profissional reconhecida</strong> que fatura acima da média do mercado.
       </p>
     </div>
@@ -1621,7 +1644,7 @@
 
       <div class="price-block reveal">
         <p class="price-was">De R$ 1.433,50</p>
-        <p class="price-main">12x de R$ 14,00</p>
+        <p class="price-main">12x de R$ 21,90</p>
         <p class="price-or">ou</p>
         <p class="price-cash">R$ 197,00 à vista</p>
       </div>
@@ -1636,7 +1659,7 @@
   </section>
 
   <footer>
-    <p>© 2024 <span>Curso TBL</span> · Giselle Silveira · Todos os direitos reservados.</p>
+    <p>© 2024 <span>Curso TBL</span> · Giselle Garcia · Todos os direitos reservados.</p>
   </footer>
 
   <script>
