@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/Site TBL Webnario/index.html" },
+    { "source": "/(.*)", "destination": "/Site TBL Webnario/$1" }
+  ]
+}
