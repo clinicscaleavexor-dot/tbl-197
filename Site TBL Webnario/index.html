@@ -206,29 +206,19 @@
     .learn-list li p { font-size: 15px; line-height: 1.6; }
     .learn-list li strong { color: var(--mauve); }
 
-    /* ══════════════════════════════════════════════
-       4. RESULTADOS DAS ALUNAS
-    ══════════════════════════════════════════════ */
-    .results {
-      background: linear-gradient(160deg, #fff9f6 0%, var(--blush) 100%);
-      padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 60px);
-      text-align: center;
+    /* ── HERO IMAGE ─────────────────────────────── */
+    .hero-img {
+      max-width: 520px; width: 100%; margin: 28px auto 32px;
+      border-radius: 20px; box-shadow: 0 12px 48px rgba(44,27,30,0.18);
+      display: block;
     }
-    .results-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 14px; max-width: 860px; margin: 36px auto 0;
+    .hero-bonus-note {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color: var(--white); font-size: 13px; font-weight: 700;
+      letter-spacing: 0.06em; padding: 10px 22px; border-radius: 999px;
+      margin: 0 auto 32px; box-shadow: 0 4px 18px rgba(201,169,110,0.35);
     }
-    .result-card {
-      position: relative; border-radius: 14px; overflow: hidden;
-      aspect-ratio: 1; box-shadow: 0 6px 24px rgba(44,27,30,0.15);
-    }
-    .result-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
-    .result-card:hover img { transform: scale(1.06); }
-    .results-caption {
-      margin-top: 24px; font-size: 13px; color: var(--gray);
-      letter-spacing: 0.05em; font-style: italic;
-    }
-    @media (max-width: 560px) { .results-grid { grid-template-columns: repeat(2, 1fr); } }
 
     /* ══════════════════════════════════════════════
        5. DEPOIMENTOS
@@ -287,16 +277,30 @@
       </div>
 
       <h1 class="reveal">
-        Aulão Online 100% Gratuito para você descobrir como
-        <em>viver de topo de bolo</em>
-        trabalhando de casa — mesmo começando do zero.
+        Noite dos <em>Topos Lucrativos</em>
       </h1>
+
+      <p class="hero-sub reveal">
+        Aulão Online 100% Gratuito para você descobrir como viver de topo de bolo
+        trabalhando de casa — mesmo começando do zero.
+      </p>
+
+      <img
+        src="Site topo da aula/IMG_3286.jpg"
+        alt="Topo de bolo floral — Camadas Borboletas Candy"
+        class="hero-img reveal"
+      />
 
       <p class="hero-sub reveal">
         Uma aula completa e gratuita para você aprender o método que já ajudou
         <strong>mais de 4.000 mulheres</strong> a construírem seu próprio negócio —
-        mesmo sem experiência, sem máquina de corte e com investimento mínimo.
+        mesmo sem experiência, sem máquina de corte e com investimento mínimo,
+        e de quebra saia com seu primeiro topo pronto: o <strong>topo Camadas floral Borboletas Candy</strong>.
       </p>
+
+      <div class="reveal" style="text-align:center;">
+        <span class="hero-bonus-note">✦ Assista até o final e acesse os arquivos do topo gratuitamente</span>
+      </div>
 
       <div class="hero-badges reveal">
         <span class="hero-badge">✦ 100% Gratuito</span>
@@ -347,19 +351,19 @@
       <ul class="learn-list">
         <li class="reveal">
           <div class="learn-check">✦</div>
-          <p><strong>Como criar topos de bolo profissionais</strong> usando apenas materiais simples, sem máquina de corte e com técnicas 100% manuais</p>
+          <p><strong>Como iniciar seu negócio de topos de bolo profissionais</strong> usando apenas materiais simples, sem máquina de corte e com técnicas 100% manuais</p>
         </li>
         <li class="reveal">
           <div class="learn-check">✦</div>
-          <p><strong>Como precificar seus trabalhos corretamente</strong> para lucrar de verdade e não trabalhar de graça</p>
+          <p><strong>Como criar as artes digitais do zero</strong> — tanto no Studio para computador quanto no celular</p>
         </li>
         <li class="reveal">
           <div class="learn-check">✦</div>
-          <p><strong>Como atrair clientes pelo celular</strong> usando o Instagram e o WhatsApp, mesmo sem saber nada de marketing</p>
+          <p><strong>Tipos de papéis e ferramentas realmente necessárias</strong> — sem grandes investimentos, você pode começar seu negócio hoje</p>
         </li>
         <li class="reveal">
           <div class="learn-check">✦</div>
-          <p><strong>Como montar seu negócio de casa</strong> com investimento mínimo e começar a faturar nos primeiros 30 dias</p>
+          <p><strong>Tipos de impressora, como começar mesmo sem uma</strong> e tudo sobre impressão profissional</p>
         </li>
         <li class="reveal">
           <div class="learn-check">✦</div>
@@ -372,30 +376,6 @@
           <span>Quero participar do aulão ›</span>
         </a>
       </div>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════════
-       4. RESULTADOS DAS ALUNAS
-  ══════════════════════════════════════════════ -->
-  <section class="results">
-    <div class="container">
-      <span class="section-tag reveal">Resultados reais</span>
-      <div class="ornament reveal"><span></span><i>✦</i><span></span></div>
-      <h2 class="section-h2 reveal">Veja o que nossas alunas<br /><em>são capazes de criar</em></h2>
-
-      <div class="results-grid reveal">
-        <div class="result-card"><img src="imagens-alunas/aluna-1.jpg" alt="Trabalho de aluna" /></div>
-        <div class="result-card"><img src="imagens-alunas/aluna-2.jpg" alt="Trabalho de aluna" /></div>
-        <div class="result-card"><img src="imagens-alunas/aluna-3.jpg" alt="Trabalho de aluna" /></div>
-        <div class="result-card"><img src="imagens-alunas/aluna-4.jpg" alt="Trabalho de aluna" /></div>
-        <div class="result-card"><img src="imagens-alunas/aluna-5.jpg" alt="Trabalho de aluna" /></div>
-        <div class="result-card"><img src="imagens-alunas/aluna-6.jpg" alt="Trabalho de aluna" /></div>
-        <div class="result-card"><img src="imagens-alunas/aluna-7.jpg" alt="Trabalho de aluna" /></div>
-        <div class="result-card"><img src="imagens-alunas/aluna-8.jpg" alt="Trabalho de aluna" /></div>
-        <div class="result-card"><img src="imagens-alunas/aluna-9.jpg" alt="Trabalho de aluna" /></div>
-      </div>
-      <p class="results-caption reveal">Trabalhos reais produzidos por alunas do Curso TBL 197</p>
     </div>
   </section>
 
